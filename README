@@ -1,0 +1,21 @@
+This project is for course CNT 5106C.
+
+This p2p sharing program contains server.java and client.java. Only 5 peers are included in this p2p program.
+
+The server is listening at port 8821.
+
+The clients are listening at port from 8900 to 8905. The configuration is shown below.
+
+server 8821
+ID     Uploading port   Downloading Port
+peer1  8901              8902
+peer2  8902              8903
+peer3  8903              8904
+peer4  8904              8905
+peer5  8905              8901
+
+To test this p2p project, you should run "java server your_test_file_path" which is followed by the command "java client" in a new cmd window.
+
+This client.java will launch 5 clients, which all have downloading and uploading thread to finish p2p sharing.
+
+In the end, each peer will get the orignial file in an individual folder. 
